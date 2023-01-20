@@ -14,48 +14,101 @@
         <div class="info">
             <h1 class="centered">Dataset Types</h1>
             <table>
-                <!-- make a blue header -->
-                <tr>
+                <tr id="table-header">
                     <th>Data</th>
                     <th>Link</th>
                     <th>Dataset Type</th>
                 </tr>
                 <tr>
                     <td>Airports.csv</td>
-                    <td><a href="data/Airports.csv">Airports Link</a></td>
+                    <td><a href="data/Airports.csv">Airports Dataset Link</a></td>
                     <td>Geometry</td>
                 </tr>
                 <tr>
                     <td>Google-Web.txt</td>
-                    <td><a href="data/Google-Web.txt">Google Web link</a></td> 
-                    <td>Network</td>
+                    <td><a href="data/Google-Web.txt">Google-Web Dataset Link</a></td> 
+                    <td>Networks</td>
                 </tr>
-                
                 <tr>
                     <td>UFO.csv</td>
-                    <td><a href="data/UFO.csv">UFO link</a></td> 
+                    <td><a href="data/UFO.csv">UFO Dataset Link</a></td> 
                     <td>Tables</td>
                 </tr>
             </table>
-
         </div>
+
         <div class="info">
             <h1 class="centered">Data Types</h1>
+
+            <h4 class="data-header">UFO</h4>
+                <ul>
+                    <li>'datetime' Column Datatype: Attributes</li>
+                    <ul>
+                        <li>Attribute Type: Ordered (Ordinal, Sequential)</li>
+                    </ul>
+                    <!-- Is this technically an attribute? -->
+                    <li>'city' Column Datatype: Attributes</li>
+                    <ul>
+                        <li>Attribute Type: Categorical</li>
+                    </ul>
+                    <li>'state' Column Datatype: Attributes</li>
+                    <ul>
+                        <li>Attribute Type: Categorical</li>
+                    </ul>
+                    <li>'country' Column Datatype: Attributes</li>
+                    <ul>
+                        <li>Attribute Type: Categorical</li>
+                    </ul>
+                    <li>'shape' Column Datatype: Attributes</li>
+                    <ul>
+                        <li>Attribute Type: Categorical</li>
+                    </ul>
+                    <li>'duration' Column Datatype: Attributes</li>
+                    <ul>
+                        <!-- Is it sequential?-->
+                        <li>Attribute Type: Ordered (Quantitative, Sequential)</li>
+                    </ul>
+                    <li>Row Datatype: Items</li>
+                </ul>
+
+            <h4 class="data-header">Airports</h4>
+                <ul>
+                    <li>'AIRPORT_NAME' Column Datatype: Attributes</li>
+                    <ul>
+                        <li>Attribute Type: Categorical</li>
+                    </ul>
+                    <li>'LATITUDE' Column Datatype: Position</li>
+                    <li>'LONGITUDE' Column Datatype: Position</li> 
+                    <li>Row Datatype: Items</li>
+                </ul>
+                
+            <h4 class="data-header">Google-Web</h4>
+                <ul>
+                    <li>'FromNodeId' Column Datatype: Link</li>
+                    <li>'ToNodeId' Column Datatype: Link</li>
+                    <li>Row Datatype: Items</li>
+                </ul>
         </div>
     </div>
 
     <div id="task-abstraction">
         <h1 class="centered">Task Abstraction</h1>
+        <div class="flex-container">
+          <div><img src="vis1.png" alt="Daily maximum temperatures in Vancouver 1979-2021"></div>
+          <div><img src="vis2.png" alt="Number of times daily mean temperatures were 20 degrees Fahrenheit above normal"></div>
+    <!--Under each image, identify the high, medium, and low level actions of the visualization shown in the image, and the target(s) of those actions. This text should be left-aligned in the columns and in a font color of your choosing (but make sure it is readable).-->
+        </div>
     </div>
 
 
     <div id="decoration">
-
+    <!--Add a row of evenly spaced, alternating, circles and rectagles (you should use SVG's'). The shapes can be whatever colors you choose. The circles should have 50% opacity, and the rectangles should have a border. The spacing of the shapes should be maintained as the page width changes (see the reference video). If the mouse hovers over a rectangle, it should temporarily change color. If the mouse hovers over a circle, a border should be temporarily added.-->
     </div>
 
     <h3 class="centered">Acknowledgements</h3>
         <div>
-            <!-- https://www.w3schools.com/html/html_tables.asp--> 
+            <!-- https://www.w3schools.com/html/html_tables.asp, https://www.w3schools.com/html/html_lists_unordered.asp
+                , https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox--> 
         </div>
 
 </body>
