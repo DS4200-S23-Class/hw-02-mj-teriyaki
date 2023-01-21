@@ -10,6 +10,16 @@ body {
 	background-color: rgb(135, 206, 260);
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
 .data-header {
 	text-align: left;
 }
