@@ -14,6 +14,11 @@ table {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid black;
 }
 
 td {
@@ -26,16 +31,14 @@ td {
 
 .flex-container {
   display: flex;
-  width: %;
   object-fit: contain;
   align-content: center;
-  flex-wrap: row;
+  flex-direction: row;
 }
 
 .flex-container > div {
-  margin: 5px;
+  margin: 10px;
   font-size: 30px;
-  object-fit: contain;
 } 
 
 img {
@@ -44,6 +47,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.text {
+  text-align: left;
+  font-size: 14px;
+  color: red;
 }
 
 #decoration {
