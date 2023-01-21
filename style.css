@@ -43,4 +43,33 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
+
+#decoration {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+circle {
+  opacity: 50%;
+  fill: red;
+}
+
+circle:hover {
+  stroke: rgb(0, 0, 250);
+  stroke-width: 10px;
+}
+
+rect {
+  stroke: skyblue;
+  stroke-width: 10px;
+  fill: rgb(220, 20, 60);
+}
+
+rect:hover {
+  fill: lavender;
+}
+
+
