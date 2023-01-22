@@ -31,14 +31,16 @@ td {
 
 .flex-container {
   display: flex;
-  object-fit: contain;
+  object-fit: fill;
   align-content: center;
+  justify-content: center;
   flex-direction: row;
 }
 
 .flex-container > div {
   margin: 10px;
   font-size: 30px;
+  padding: 20px;
 } 
 
 img {
@@ -47,8 +49,8 @@ img {
   margin-right: auto;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .text {
@@ -59,13 +61,14 @@ img {
 
 #decoration {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
 }
 
 circle {
   opacity: 50%;
-  fill: red;
+  fill: rgb(255,0,0)
+;
 }
 
 circle:hover {
@@ -80,6 +83,6 @@ rect {
 }
 
 rect:hover {
-  fill: lavender;
+  fill: rgb(230,230,250);
 }
 
