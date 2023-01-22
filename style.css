@@ -42,11 +42,21 @@ td {
 } 
 
 img {
-  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#img-1 {
+  width: 650px;
+  height: 500px;
+}
+
+#img-2 {
+  width: 600px;
+  height: 400px;
 }
 
 .text {
