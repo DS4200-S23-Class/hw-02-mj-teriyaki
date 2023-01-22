@@ -47,16 +47,8 @@ img {
   margin-right: auto;
   align-items: center;
   justify-content: space-around;
-}
-
-#img-1 {
-  width: 650px;
-  height: 500px;
-}
-
-#img-2 {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: auto;
 }
 
 .text {
