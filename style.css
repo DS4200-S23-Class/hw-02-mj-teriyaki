@@ -31,26 +31,22 @@ td {
 
 .flex-container {
   display: flex;
-  object-fit: fill;
-  align-content: center;
-  justify-content: center;
   flex-direction: row;
 }
 
-.flex-container > div {
-  margin: 10px;
-  font-size: 30px;
-  padding: 20px;
-} 
+.flex-left {
+  flex: 50%;
+}
+
+.flex-right {
+  flex: 50%;
+}
 
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: space-around;
-  height: auto;
+  display: grid;
   width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .text {
@@ -61,14 +57,13 @@ img {
 
 #decoration {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
 }
 
 circle {
   opacity: 50%;
-  fill: rgb(255,0,0)
-;
+  fill: rgb(255,0,0);
 }
 
 circle:hover {
@@ -85,4 +80,3 @@ rect {
 rect:hover {
   fill: rgb(230,230,250);
 }
-
