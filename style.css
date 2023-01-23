@@ -1,15 +1,20 @@
+/* Make all font on page Arial */
 body {
 	font-family: Arial;
 }
 
-.centered {
+/* Make main headers center align */
+h1 {
 	text-align: center;
 }
 
+/* Make table header blue */
 #table-header {
 	background-color: rgb(135, 206, 260);
 }
 
+
+/* Style the table */
 table {
   margin-left: auto;
   margin-right: auto;
@@ -17,31 +22,39 @@ table {
   border-collapse: collapse;
 }
 
+/* Add borders to bottom of each row */
 tr {
   border-bottom: 1px solid black;
 }
 
+
+/* Center the text in the table */
 td {
   text-align: center;
 }
 
-.data-header {
+/* Center headers used in data types section */
+h3 {
 	text-align: left;
 }
 
+/* Flexbox container (parent) */
 .flex-container {
   display: flex;
   flex-direction: row;
 }
 
+/* A child of flexbox container */
 .flex-left {
   flex: 50%;
 }
 
+/* Another flexbox container child */
 .flex-right {
   flex: 50%;
 }
 
+/* Style the images */
 img {
   display: grid;
   width: 100%;
@@ -49,12 +62,14 @@ img {
   position: relative;
 }
 
-.text {
+/* Style the information about tasks under the images */
+p {
   text-align: left;
   font-size: 14px;
-  color: red;
+  color: rgb(255,0,0);
 }
 
+/* Flexbox container for the circles and rectangles */
 #decoration {
   display: flex;
   justify-content: space-evenly;
@@ -62,22 +77,31 @@ img {
   align-items: center;
 }
 
+/* Style the circle */
 circle {
   opacity: 50%;
   fill: rgb(255,0,0);
 }
 
+/* Style the circle when it's hovered over */
 circle:hover {
   stroke: rgb(0, 0, 250);
   stroke-width: 5px;
 }
 
+/* Style the rectangle */
 rect {
   stroke: skyblue;
   stroke-width: 10px;
   fill: rgb(220, 20, 60);
 }
 
+/* Style the rectangle when it's hovered over */
 rect:hover {
   fill: rgb(230,230,250);
+}
+
+/* Center the acknowledgmenets section */
+h2 {
+  text-align: center;
 }

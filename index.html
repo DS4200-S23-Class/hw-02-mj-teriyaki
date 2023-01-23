@@ -3,121 +3,149 @@
 
 <head>
     <meta charset=utf-8/>
+    <!-- Link to style sheet and title the page -->
     <link rel="stylesheet" href="style.css">
     <title>hw-02</title>
 </head>
 
 
 <body>
-
+    <!-- Data abstraction section for information/links to dataset -->
     <div id="data-abstraction">
+
         <div class="info">
-            <h1 class="centered">Dataset Types</h1>
+
+            <!-- Header for the section -->
+            <h1>Dataset Types</h1>
+
+            <!-- Table including the three datasets, their links, and dataset type -->
             <table>
                 <tr id="table-header">
                     <th>Data</th>
                     <th>Link</th>
                     <th>Dataset Type</th>
                 </tr>
+
                 <tr>
                     <td>Airports</td>
                     <td><a href="data/Airports.csv">Airports Dataset Link</a></td>
                     <td>Geometry</td>
                 </tr>
+
                 <tr>
                     <td>Google-Web</td>
                     <td><a href="data/Google-Web.txt">Google-Web Dataset Link</a></td> 
                     <td>Networks</td>
                 </tr>
+
                 <tr>
                     <td>UFO</td>
                     <td><a href="data/UFO.csv">UFO Dataset Link</a></td> 
                     <td>Tables</td>
                 </tr>
             </table>
-
         </div>
 
+        <!-- Data types section for more detailed information on data within datasets -->
         <div class="info">
-            <h1 class="centered">Data Types</h1>
 
-            <h4 class="data-header">UFO</h4>
+            <!-- Header for the section -->
+            <h1>Data Types</h1>
+
+            <!-- Smaller header for UFO section followed by bullet points for each datatype (column and row)-->
+            <h3 class="data-header">UFO</h3>
                 <ul>
-                    <li>'datetime' Column Datatype: Attributes</li>
+                    <li>'datetime' Column Datatype: Attribute</li>
                     <ul>
                         <li>Attribute Type: Ordered (Ordinal, Sequential)</li>
                     </ul>
-                    <!-- Is this technically an attribute? -->
-                    <li>'city' Column Datatype: Attributes</li>
+                    <li>'city' Column Datatype: Attribute</li>
                     <ul>
                         <li>Attribute Type: Categorical</li>
                     </ul>
-                    <li>'state' Column Datatype: Attributes</li>
+                    <li>'state' Column Datatype: Attribute</li>
                     <ul>
                         <li>Attribute Type: Categorical</li>
                     </ul>
-                    <li>'country' Column Datatype: Attributes</li>
+                    <li>'country' Column Datatype: Attribute</li>
                     <ul>
                         <li>Attribute Type: Categorical</li>
                     </ul>
-                    <li>'shape' Column Datatype: Attributes</li>
+                    <li>'shape' Column Datatype: Attribute</li>
                     <ul>
                         <li>Attribute Type: Categorical</li>
                     </ul>
-                    <li>'duration' Column Datatype: Attributes</li>
+                    <li>'duration' Column Datatype: Attribute</li>
                     <ul>
-                        <!-- Is it sequential?-->
                         <li>Attribute Type: Ordered (Quantitative, Sequential)</li>
                     </ul>
-                    <li>Row Datatype: Items</li>
+                    <li>Row Datatype: Item</li>
                 </ul>
 
-            <h4 class="data-header">Airports</h4>
+            <!-- Smaller header for Airports section followed by bullet points for each datatype (column and row)-->
+            <h3 class="data-header">Airports</h3>
                 <ul>
-                    <li>'AIRPORT_NAME' Column Datatype: Attributes</li>
+                    <li>'AIRPORT_NAME' Column Datatype: Attribute</li>
                     <ul>
                         <li>Attribute Type: Categorical</li>
                     </ul>
                     <li>'LATITUDE' Column Datatype: Position</li>
                     <li>'LONGITUDE' Column Datatype: Position</li> 
-                    <li>Row Datatype: Items</li>
+                    <li>Row Datatype: Item</li>
                 </ul>
-                
-            <h4 class="data-header">Google-Web</h4>
+
+            <!-- Smaller header for Google-Web section followed by bullet points for each datatype (column and row)-->
+            <h3 class="data-header">Google-Web</h3>
                 <ul>
-                    <li>'FromNodeId' Column Datatype: Link</li>
-                    <li>'ToNodeId' Column Datatype: Link</li>
-                    <li>Row Datatype: Items</li>
+                    <li>'FromNodeId' Column Datatype: Attribute</li>
+                    <ul>
+                        <li>Attribute Type: Categorical</li>
+                    </ul>
+                    <li>'ToNodeId' Column Datatype: Attribute</li>
+                    <ul>
+                        <li>Attribute Type: Categorical</li>
+                    </ul>
+                    <li>Row Datatype: Link</li>
                 </ul>
         </div>
     </div>
 
+    <!-- Task abstraction section about two images and their tasks -->
     <div id="task-abstraction">
-        <h1 class="centered">Task Abstraction</h1>
+
+        <h1>Task Abstraction</h1>
+
+        <!-- Flexbox for creating a row lawout -->
+        <!-- Flex container as the parent -->
         <div class="flex-container">
+
+            <!-- Flex-left as one of the child -->
             <div class="flex-left">
+                <!-- Image followed by discussing the task and target -->
                 <img src="img\vis1.png" alt="Daily maximum temperatures in Vancouver 1979-2021">
-                <p class="text">High-level task: </p>
-                <p class="text">Medium-level task: </p>
-                <p class="text">Low-level task: </p>
-                <p class="text">Target(s): Seattle-Tacoma International Airport, Vancouver International Airport, and Portland International Airport workers who may use the visualization to see if certain flight delays/changes 
+                <p>High-level task: </p>
+                <p>Medium-level task: </p>
+                <p>Low-level task: </p>
+                <p>Target(s): Seattle-Tacoma International Airport, Vancouver International Airport, and Portland International Airport workers who may use the visualization to see if certain flight delays/changes 
                 may relate to the maximum temperatures, or for other purposes as well.</p>
-
             </div>
 
+            <!-- Flex-left as the other child -->
             <div class="flex-right">
+                <!-- Image followed by discussing the task and target -->
                 <img src="img\vis2.png" alt="Number of times daily mean temperatures were 20 degrees Fahrenheit above normal">
-                <p class="text">High-level task: </p>
-                <p class="text">Medium-level task: </p>
-                <p class="text">Low-level task: </p>
-                <p class="text">Target(s): General public who may not necessarily know much/believe in climate change over the years.</p>
+                <p>High-level task: </p>
+                <p>Medium-level task: </p>
+                <p>Low-level task: </p>
+                <p>Target(s): General public who may not necessarily know much/believe in climate change over the years.</p>
             </div>
-    <!--Under each image, identify the high, medium, and low level actions of the visualization shown in the image, and the target(s) of those actions. This text should be left-aligned in the columns and in a font color of your choosing (but make sure it is readable).-->
         </div>
     </div>
 
-
+    <!-- Decoration section with circles and rectanges as the flexbox children -->
     <div id="decoration">
+
+        <!-- Dimensions for circles and rectangles below -->
         <svg width="100" height="100">
             <circle cx="50" cy="50" r="40"/>
         </svg>     
@@ -143,10 +171,30 @@
         </svg>
     </div>
 
-    <h3 class="centered">Acknowledgements</h3>
+    <!-- Acknowledgements section with resources used -->
+    <h2>Acknowledgements</h2>
         <div>
-            <!-- https://www.w3schools.com/html/html_tables.asp, https://www.w3schools.com/html/html_lists_unordered.asp
-                , https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox. https://www.w3schools.com/howto/howto_css_two_columns.asp, https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html--> 
+            <!-- Bulleted list of links/resources used -->
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/html/html_tables.asp">HTML Tables</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/html/html_lists_unordered.asp">HTML Unordered (Bulleted) List</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flexbox</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Two Column Layout</a>
+                </li>
+                <li>
+                    <a href="https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html"> Auto Resize Image</a>
+                </li>
+                <li>
+                    <a href=" https://www.w3schools.com/html/html_links.asp">HTML Links</a>
+                </li>
+            </ul>
         </div>
 
 </body>
